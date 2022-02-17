@@ -79,7 +79,7 @@ export default {
           this.$message.success(resp.data.msg);
           var pageUrl = window.location.href;
           var param = pageUrl.split("?")[1];
-          window.location.href = "http://oauth.com/auth/oauth/authorize?" + param;
+          window.location.href = "http://oauth.sso.com/auth/oauth/authorize?" + param;
         } else {
           this.$message.error(resp.data.msg);
         }

@@ -17,7 +17,8 @@ Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
 // 配置请求的根路径
-axios.defaults.baseURL = 'http://oauth.com/'
+axios.defaults.baseURL = 'http://oauth.sso.com/';
+axios.defaults.withCredentials = true;
 
 /* eslint-disable no-new */
 new Vue({

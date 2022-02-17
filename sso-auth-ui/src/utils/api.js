@@ -1,11 +1,12 @@
 import axios from 'axios'
 
-let base = 'http://oauth.com'
+let base = 'http://oauth.sso.com'
 export const postRequest = (url, params) => {
   return axios({
     method: 'post',
     url: `${base}${url}`,
     data: params,
+    withCredentials: true,
     transformRequest: [function (data) {
       // Do whatever you want to transform the data
       let ret = ''
