@@ -12,7 +12,8 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/client2': {
-        target: 'http://client2.sso.com/',
+        target: 'http://client2.sso.com/',  //后端接口
+        changeOrigin: true,//是否允许跨越
         pathRewrite: {
           '^/client2': '/client2'
         }

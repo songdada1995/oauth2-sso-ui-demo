@@ -12,7 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/auth': {
-        target: 'http://oauth.sso.com/',
+        target: 'http://auth.sso.com/',
         pathRewrite: {
           '^/auth': '/auth'
         }

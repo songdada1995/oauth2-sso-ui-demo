@@ -73,13 +73,13 @@ export default {
 
   methods: {
     submitLogin() {
-      postRequest("/auth/login", this.loginForm).then((resp) => {
+      postRequest("/login", this.loginForm).then((resp) => {
         if (resp.data.code === 1000000) {
           // 登录接口成功
           this.$message.success(resp.data.msg);
           var pageUrl = window.location.href;
           var param = pageUrl.split("?")[1];
-          window.location.href = "http://oauth.sso.com/auth/oauth/authorize?" + param;
+          window.location.href = "http://auth.sso.com/auth/oauth/authorize?" + param;
         } else {
           this.$message.error(resp.data.msg);
         }

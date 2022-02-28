@@ -17,7 +17,7 @@ export default {
   },
   methods: {
     test() {
-      getRequest("/client1/api/test/hello").then((resp) => {
+      getRequest("/api/test/hello").then((resp) => {
         if (resp.data.code === 200) {
           // 获取数据成功
           this.msg = resp.data.data;

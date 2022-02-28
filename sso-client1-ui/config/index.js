@@ -12,10 +12,11 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/client1': {
-        target: 'http://client1.sso.com/',
+        target: 'http://client1.sso.com/', //后端接口
+        changeOrigin: true,//是否允许跨越
         pathRewrite: {
-          '^/client1': '/client1'
-        }
+          '^/client1': '/client1' //重写
+        },
       }
     },
 

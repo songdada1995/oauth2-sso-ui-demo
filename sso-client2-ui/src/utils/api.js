@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-let base = 'http://client2.sso.com'
+let base = 'http://client2.sso.com/client2'
 export const postRequest = (url, params) => {
   return axios({
     method: 'post',

@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-let base = 'http://oauth.sso.com'
+let base = 'http://auth.sso.com/auth'
 export const postRequest = (url, params) => {
   return axios({
     method: 'post',

@@ -17,7 +17,7 @@ export default {
   },
   methods: {
     test() {
-      getRequest("/client2/api/test/hello").then((resp) => {
+      getRequest("/api/test/hello").then((resp) => {
         if (resp.data.code === 200) {
           this.msg = resp.data.data;
         } else if (resp.data.code === 1000002) {
